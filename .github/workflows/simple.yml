@@ -22,8 +22,8 @@ jobs:
     runs-on: windows-latest
     needs: ["run-shell-command"]
     steps:
-      - name: Directory Powershell
-        run: Git-Location
-      - name: Directory Bash
+      - name: directory-powershell
+        run: Get-Location
+      - name: directory-bash
         run: pwd
         shell: bash
